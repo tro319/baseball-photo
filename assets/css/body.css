@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Noto+Serif+JP:wght@700&family=Shippori+Mincho+B1:wght@700&display=swap');
+
+
+
+html {
+    font-size: 100%;
+}
+
+body {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+
+
+/* header navbar
+=================================== */
+
+#hdr_header {
+    position: sticky;
+    top: 0;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Kalam', cursive;
+}
+
+#hdr_header_sub {
+    position: sticky;
+    top: 0;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Kalam', cursive;
+}
+
+/* header navbar menu 各チームのロゴ部分
+===================================== */
+
+.sports-list li {
+    margin-left: 10px;
+}
+
+.sports-list li a {
+    display: flex;
+}
+
+.team-logo-img {
+    display: block;
+    width: 38px;
+    padding-right: 5px;
+}
+
+.team-logo-img img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+/* main
+========================================= */
+
+/* swiper slider
+========================================= */
+
+.main-wrapper {
+    margin-top: 150px;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+    opacity: .3;
+    transform: scale(.8);
+    transition: .7s;
+}
+
+.swiper .swiper-wrapper .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+}
+
+
+
+
+
+
+/* scroll
+========================================= */
+
+#main-bottom h2 {
+    animation-name: fadeInMainBottomTitle;
+    animation-duration: 2s;
+    opacity: 1;
+    margin-bottom: 175px;
+}
+
+
+@keyframes fadeInMainBottomTitle {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#main-bottom .img {
+    opacity: 0;
+}
+
+#main-bottom .img img {
+    box-shadow: 5px 5px 8px rgb(130, 130, 130);
+    transition: all 2s;
+    margin-bottom: 250px;
+}
+
+#main-bottom .img-after {
+    opacity: 1;
+}
+
+
+
+
+
+
+/* footer 
+================================================ */
+
+#footer {
+    font-size: 0.7rem;
+}
+
+
+
+
+/* hambargermenu original
+========================================== */
+
+#header {
+    box-sizing: border-box;
+    background: linear-gradient(150deg, rgba(96, 151, 234, 1), rgba(255, 255, 255, 1));
+}
+
+.sports-list {
+    transition: 0.5s all ease-in-out;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 30px;
+    height: 4px;
+    background-color: #d1a155;
+    transition: 0.5s all;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    #hdr_header {
+        position: sticky;
+        top: 0;
+        font-family: 'Edu TAS Beginner', cursive;
+        font-family: 'Kalam', cursive;
+    }
+
+    #hdr_header_sub {
+        position: sticky;
+        top: 0;
+        font-family: 'Edu TAS Beginner', cursive;
+        font-family: 'Kalam', cursive;
+    }
+
+    .page-title {
+        padding-left: 10px;
+    }
+
+    .sports-list {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #hdr_header {
+        position: sticky;
+        top: 0;
+        font-family: 'Edu TAS Beginner', cursive;
+        font-family: 'Kalam', cursive;
+    }
+
+    #hdr_header_sub {
+        position: sticky;
+        top: 0;
+        font-family: 'Edu TAS Beginner', cursive;
+        font-family: 'Kalam', cursive;
+    }
+
+    .page-title {
+        padding-left: 5px;
+    }
+
+    .sports-list {
+        position: absolute;
+        right: -500px;
+        top: 12vh;
+        width: 50%;
+        height: 92vh;
+        flex-direction: column;
+        background-color: #9abce4;
+        padding: 10px;
+    }
+
+    .sports-list-active {
+        right: 0;
+    }
+
+    .sports-list li {
+        position: relative;
+        opacity: 1;
+        margin-bottom: 25px;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-10px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-10px, -6px);
+}
+
+#nav li ul {
+    display: none;
+}
+
+
+
+
+
+
+
